@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Huddle landing page with alternating feature blocks
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+    <header class="z-10 bg-[#f0fafc]">
+      <nav
+        class="container flex max-w-[1440px] items-center justify-between p-4"
+      >
+        <div>
+          <img class="block w-36" src="./images/logo.svg" alt="logo" />
+        </div>
+        <button
+          class="cursor-pointer rounded-full bg-white px-10 py-2 font-openSans font-semibold capitalize text-darkCyan shadow-md hover:text-grayishBlue"
+        >
+          Try it free
+        </button>
+      </nav>
+    </header>
+    <main class="text-center lg:text-start">
+      <section
+        class="-mt-20 bg-[#f0fafc] bg-[url(/images/bg-hero-mobile.svg)] bg-contain bg-center bg-no-repeat pt-28 lg:bg-[url(/images/bg-hero-desktop.svg)]"
+      >
+        <article
+          class="container grid h-full max-w-[1440px] grid-cols-1 gap-14 p-8 lg:grid-cols-[repeat(2,_2fr)_minmax(0,1fr)] lg:gap-12 lg:pt-0"
+        >
+          <div
+            class="flex flex-col items-center space-y-8 lg:items-start lg:justify-center"
+          >
+            <h1 class="text-2xl leading-normal lg:text-[2.6rem]">
+              Build The Community Your Fans Will Love
+            </h1>
+            <p class="font-normal">
+              Huddle re-imagines the way we build communities. You have a voice,
+              but so does your audience. Create connections with your users as
+              you engage in genuine discussion.
+            </p>
+            <button
+              class="cursor-pointer rounded-full bg-primaryClr px-12 py-2 font-openSans font-semibold text-white shadow-lg transition-all duration-150 ease-in-out hover:bg-primaryClr/70"
+            >
+              Get Started For Free
+            </button>
+          </div>
+          <div class="col-span-1 lg:col-span-2">
+            <img src="./images/illustration-mockups.svg" alt="hero image" />
+          </div>
+        </article>
+      </section>
+      <section class="relative space-y-8 px-4 pb-44 pt-12 lg:px-8">
+        <article
+          class="container grid max-w-[1440px] grid-cols-1 gap-12 rounded-xl px-8 py-10 shadow-[0px_0px_20px_0px_rgba(0,0,0,0.1)] lg:grid-cols-2"
+        >
+          <div class="flex flex-col justify-center space-y-6 lg:p-16">
+            <h2 class="text-xl lg:text-4xl">Grow Together</h2>
+            <p class="text-sm text-grayishBlue lg:text-lg">
+              Generate meaningful discussions with your audience and build a
+              strong, loyal community. Think of the insightful conversations you
+              miss out on with a feedback form.
+            </p>
+          </div>
+          <div class="order-first lg:order-last">
+            <img
+              src="./images/illustration-grow-together.svg"
+              alt="hero image"
+            />
+          </div>
+        </article>
+
+        <article
+          class="container grid max-w-[1440px] grid-cols-1 gap-12 rounded-xl px-8 py-10 shadow-[0px_0px_20px_0px_rgba(0,0,0,0.1)] lg:grid-cols-2"
+        >
+          <div class="flex flex-col justify-center space-y-6 lg:p-16">
+            <h2 class="text-xl lg:text-4xl">Flowing Conversations</h2>
+            <p class="text-sm text-grayishBlue lg:text-lg">
+              You wouldn't paginate a conversation in real life, so why do it
+              online? Our threads have just-in-time loading for a more natural
+              flow.
+            </p>
+          </div>
+          <div class="order-first">
+            <img
+              src="./images/illustration-flowing-conversation.svg"
+              alt="hero image"
+            />
+          </div>
+        </article>
+
+        <article
+          class="container grid max-w-[1440px] grid-cols-1 gap-12 rounded-xl px-8 py-10 shadow-[0px_0px_20px_0px_rgba(0,0,0,0.1)] lg:grid-cols-2"
+        >
+          <div class="flex flex-col justify-center space-y-6 lg:p-16">
+            <h2 class="text-xl lg:text-4xl">Your Users</h2>
+            <p class="text-sm text-grayishBlue lg:text-lg">
+              It takes no time at all to integrate Huddle with your app's
+              authentication solution. This means, once signed in to your app,
+              your users can start chatting immediately.
+            </p>
+          </div>
+          <div class="order-first lg:order-last">
+            <img src="./images/illustration-your-users.svg" alt="hero image" />
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="relative flex justify-center bg-darkCyan">
+      <article class="container absolute max-w-[500px] px-4 lg:max-w-[800px]">
+        <div
+          class="flex -translate-y-24 flex-col items-center space-y-6 rounded-xl bg-white px-4 py-8 text-center shadow-[0px_0px_20px_0px_rgba(0,0,0,0.1)]"
+        >
+          <h2 class="text-lg lg:text-4xl">Ready To Build Your Community?</h2>
+          <button
+            class="lg:text-md cursor-pointer rounded-full bg-primaryClr px-10 py-3 font-openSans text-sm font-semibold text-white shadow-lg transition-all duration-150 ease-in-out hover:bg-primaryClr/70 lg:px-12"
+          >
+            Get Started For Free
+          </button>
+        </div>
+      </article>
+      <div
+        class="container grid max-w-[1440px] grid-cols-1 gap-6 px-4 pb-8 pt-32 text-white lg:px-8"
+      >
+        <div>
+          <img class="w-40" src="./images/logo-footer.svg" alt="" />
+        </div>
+        <!-- grid -->
+        <div
+          class="grid grid-cols-1 gap-x-24 gap-y-12 lg:grid-cols-3 lg:gap-y-0"
+        >
+          <div class="flex flex-col gap-4">
+            <div class="flex items-start gap-6">
+              <img
+                class="mt-2 h-5 w-5"
+                src="./images/icon-location.svg"
+                alt="location"
+              />
+              <span
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua</span
+              >
+            </div>
+            <div class="flex gap-6">
+              <img class="h-5 w-5" src="./images/icon-phone.svg" alt="phone" />
+              <span>+1-543-123-4567</span>
+            </div>
+            <div class="flex gap-6">
+              <img class="h-5 w-5" src="./images/icon-email.svg" alt="email" />
+              <span>example@huddle.com</span>
+            </div>
+          </div>
+          <div
+            class="flex flex-col justify-start gap-4 lg:flex-row lg:content-end lg:justify-around"
+          >
+            <div>
+              <ul
+                class="flex flex-col space-y-4 font-light capitalize tracking-wide"
+              >
+                <li class="capitalized hover:underline">
+                  <a href="#">About us</a>
+                </li>
+                <li class="capitalized hover:underline">
+                  <a href="">What we do</a>
+                </li>
+                <li class="capitalized hover:underline"><a href="">FAQ</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul
+                class="flex flex-col space-y-4 font-light capitalize tracking-wide"
+              >
+                <li class="capitalized hover:underline">
+                  <a href="#">Career</a>
+                </li>
+                <li class="capitalized hover:underline"><a href="">Blog</a></li>
+                <li class="capitalized hover:underline">
+                  <a href="">Contact us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="lg:pl-12">
+            <ul
+              class="flex justify-center gap-3 p-4 text-white lg:justify-start lg:p-0"
+            >
+              <i
+                class="fa-brands fa-facebook-f flex h-8 w-8 cursor-pointer items-center justify-center rounded-full border border-white hover:text-primaryClr"
+              ></i>
+              <i
+                class="fa-brands fa-twitter flex h-8 w-8 cursor-pointer items-center justify-center rounded-full border border-white hover:text-primaryClr"
+              ></i>
+              <i
+                class="fa-brands fa-instagram flex h-8 w-8 cursor-pointer items-center justify-center rounded-full border border-white hover:text-primaryClr"
+              ></i>
+            </ul>
+          </div>
+          <div
+            class="-mt-10 flex justify-center lg:col-start-3 lg:justify-start lg:pl-12"
+          >
+            <span class="text-xs font-light lg:text-sm"
+              >&copy; Copyright 2018 Huddle. All rights reserved.</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
